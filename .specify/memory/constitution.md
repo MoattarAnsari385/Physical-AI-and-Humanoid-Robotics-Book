@@ -1,55 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT:
+Version change: N/A -> 1.0.0
+Added sections: All principles and sections for Physical AI & Humanoid Robotics textbook project
+Removed sections: None
+Modified principles: All 6 core principles added based on project requirements
+Templates requiring updates:
+- .specify/templates/plan-template.md: ✅ updated
+- .specify/templates/spec-template.md: ✅ updated
+- .specify/templates/tasks-template.md: ✅ updated
+- .specify/templates/commands/*.md: ✅ reviewed
+Follow-up TODOs: None
+-->
+# Physical AI & Humanoid Robotics Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### AI-Native Authoring
+AI-native authoring using Claude Code + Spec-Kit Plus: All content creation and project management must leverage AI-assisted development tools; Content must be structured for both human authoring and AI collaboration; Clear workflow integration between human expertise and AI assistance required.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Technical Accuracy in Robotics
+Technical accuracy in robotics, ROS 2 (Humble Hawksbill), Gazebo 11, NVIDIA Isaac Sim 2025, and VLA: All technical claims must be sourced from official ROS 2, Gazebo, NVIDIA Isaac, and VLA documentation; Code examples must be verified against current official documentation; Technical content must align with industry-standard practices and current software versions.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Academic Excellence for Engineering Learners
+Clear academic content for university-level engineering learners: Content must be structured for progressive learning from theory to practice; Learning outcomes clearly defined for each module and chapter; Material must be appropriate for university-level engineering students with Flesch-Kincaid grade 10–12 readability.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Practical Hands-On Guidance
+Practical, hands-on guidance for simulation and edge deployment: All code examples must be tested and reproducible in ROS 2 Ubuntu environment; Simulation examples must reflect accurate robotics constructs (URDF, physics, perception); Content must provide clear, actionable steps for practical implementation.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Modular and Reusable Structure
+Modular and reusable structure for learning progression: Content must be organized in a modular fashion to support different learning paths; Chapters and sections should be reusable for different course structures; Terminology and standards aligned with robotics industry practices.
 
-### [PRINCIPLE_6_NAME]
+### Educational Technology Integration
+Docusaurus-based book framework with GitHub Pages hosting: All content must be structured in Docusaurus-compatible markdown format; Deployment workflow must support GitHub Pages hosting; Content must be fully navigable and styled for educational readability.
 
+## Additional Constraints
+Technology stack requirements: Framework: Docusaurus-based book hosted on GitHub Pages; Content automation using Spec-Kit Plus tasks (chapter planning + implementation); English primary language (Urdu translation optional in later phases); Book should be fully navigable and styled for educational readability; Code and simulation examples must run on standard ROS 2 Ubuntu setup.
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+Content development must follow Spec-Kit Plus methodology: Use spec-driven development for all content creation; Chapter planning and implementation using automated task workflows; Clear version control and review process for content changes; Integration with GitHub workflows for automated deployment.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all aspects of the Physical AI & Humanoid Robotics textbook development: All content creation and project decisions must align with these principles; Amendments require documentation and approval through established project governance; All technical content must meet the specified accuracy and readability standards; Use CLAUDE.md for runtime development guidance.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08
